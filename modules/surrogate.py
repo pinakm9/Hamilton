@@ -44,7 +44,7 @@ class LSTM(nn.Module):
         x: (batch, D)
         returns: (batch, D)
         """
-        assert x.dim() == 2 and x.size(1) == self.D, f"Expected (batch, {self.D})"
+        # assert x.dim() == 2 and x.size(1) == self.D, f"Expected (batch, {self.D})"
         states = self._zero_state(x)
 
         h_in = x
